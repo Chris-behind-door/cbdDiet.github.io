@@ -1,0 +1,122 @@
+:root {
+    --primary-color: #2c3e50;    
+    --accent-color: #e67e22;      
+    --light-bg: #ecf0f1;         
+}
+
+#titlebox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--primary-color);
+    color: var(--light-bg);
+    padding: 1.2rem 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    font-weight: 600;
+    font-size:1.5rem;
+    letter-spacing: 0.05em;
+    text-align:center;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: var(--light-bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent-color);
+    border-radius: 4px;
+}
+
+html {
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent-color) var(--light-bg);
+}
+
+body {
+    margin: 0;
+    padding-top: 70px;
+    background: var(--light-bg);
+    color: var(--primary-color);
+}
+
+.content-wrapper {
+    margin-top: 6.2rem; /* 需与标题栏高度匹配 */
+    position: relative;
+    z-index: 1;
+}
+
+.choosebox{
+    display:inline-block;
+    position:relative;
+    width:18%;
+}
+
+.choose{
+    width:100%;
+    border-radius:8px;
+    height:5rem;
+    font-size:1.7rem;
+    font-weight:700;
+    background-color: white;
+    color:yellowgreen;
+}
+
+.choose:hover{
+    background-color:yellowgreen;
+    color:white;
+}
+
+#prompt{
+    font-family:"Microsoft Yahei";
+    width:60%;
+    display:inline-block;
+    text-align: center;
+    font-size:1.5rem;
+    font-weight:bold;
+}
+
+.choices{
+    width:100%;
+    display: none;
+    position: absolute;    /* 绝对定位脱离文档流 */
+    top: 92%;
+    left: 0;
+    z-index: 999;          /* 确保菜单在最上层 */
+    background: white;     /* 添加背景避免透明 */
+    border: 1px solid #ddd;/* 添加边框 */
+    border-radius: 8px;
+    margin-top: 5px;
+}
+
+.choice{
+    width: 100%;           /* 填满菜单宽度 */
+    text-align: center;
+    font-size:1.3rem;
+    padding: 10px;
+    font-weight:900;
+}
+
+#physique:hover #group1{
+    display:block;
+}
+
+#category:hover #group2{
+    display:block;
+}
+
+#maintext{
+    font-weight:400;
+    font-size:1.5rem;
+    padding-left:15%;
+    padding-top:3%;
+    padding-right:15%;
+    padding-bottom:8%;
+}
+
+#maintext{
+    white-space: pre-line;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyHTML</title>
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <script type="text/javascript" src="./resources/js/script.js"></script>
+</head>
+<body>
+    <div id="titlebox">
+        <h1>wxc的妙妙食谱</h1>
+    </div>
+    <div class="content-wrapper">
+        <div class="choosebox" id="physique">
+            <button class="choose" id="phy">选择体质</button>
+            <div class="choices" id="group1">
+                <button class="choice" id="phy1" onclick="setPhy1()">湿热</button>
+                <button class="choice" id="phy2" onclick="setPhy2()">平和</button>
+                <button class="choice" id="phy3" onclick="setPhy3()">气虚</button>
+                <button class="choice" id="phy4" onclick="setPhy4()">阴虚</button>
+                <button class="choice" id="phy5" onclick="setPhy5()">气郁</button>
+                <button class="choice" id="phy6" onclick="setPhy6()">血瘀</button>
+                <button class="choice" id="phy7" onclick="setPhy7()">痰湿</button>
+                <button class="choice" id="phy8" onclick="setPhy8()">阳虚</button>
+            </div>
+        </div>
+        <div class="choosebox" id="category">
+            <button class="choose" id="cat">选择类别</button>
+            <div class="choices" id="group2">
+                <button class="choice" id="cat1" onclick="setCat1()">菜肉</button>
+                <button class="choice" id="cat2" onclick="setCat2()">水果</button>
+                <button class="choice" id="cat3" onclick="setCat3()">茶饮</button>
+                <button class="choice" id="cat4" onclick="setCat4()">汤补</button>
+            </div>
+        </div>
+        <div id="prompt">
+            <span>不知道自己的体质？    请搜索微信小程序“活法儿超准体质测试”</span>
+        </div>
+        <div id="maintext">
+            饱受痤疮折磨的人啊，不要悲伤，不要害怕，因为伟大的wxc将为你指引道路！
+            这个网页旨在为不同体质的痤疮患者查询适合的食谱。
+        </div>
+    </div>
+</body>
+</html>
